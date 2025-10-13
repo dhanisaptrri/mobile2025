@@ -23,3 +23,7 @@ NIM : 2341720212
 ## Langkah 2: Floating Action Button (FAB)
 
 ![alt text](image-3.png)
+
+## Langkah 3: Scaffold Widget
+
+![alt text](image-4.png)
