@@ -27,3 +27,7 @@ NIM : 2341720212
 ## Langkah 3: Scaffold Widget
 
 ![alt text](image-4.png)
+
+## Langkah 4: Dialog Widget
+
+![alt text](image-5.png)
