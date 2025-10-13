@@ -19,3 +19,7 @@ NIM : 2341720212
 ## Langkah 1: Cupertino Button dan Loading Bar
 
 ![alt text](image-2.png)
+
+## Langkah 2: Floating Action Button (FAB)
+
+![alt text](image-3.png)
