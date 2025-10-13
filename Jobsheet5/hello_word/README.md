@@ -13,3 +13,9 @@ NIM : 2341720212
 
 ## Langkah 2: Image Widget
 ![alt text](image-1.png)
+
+#  Praktikum 5: Menerapkan Widget Material Design dan iOS Cupertino
+
+## Langkah 1: Cupertino Button dan Loading Bar
+
+![alt text](image-2.png)
