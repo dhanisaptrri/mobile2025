@@ -1,6 +1,7 @@
 # hello_word
 
 A new Flutter project.
+![alt text](image.png)
 
 ## Getting Started
 
