@@ -16,12 +16,24 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Praktikum 5',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const Scaffold(body: MyLayout()),
-    );
+      home: Scaffold(
+        appBar: AppBar(title: const Text("Contoh TextField")),
+
+        // TAMBAH WIDGET PADDING DI SINI
+        body: Padding(
+          padding: const EdgeInsets.all(
+            16.0,
+          ), // Beri padding 16.0 di semua sisi
+          child: TextField(
+            obscureText: false,
+            decoration: const InputDecoration(
+              border: OutlineInputBorder(),
+              labelText: 'Nama',
+            ),
+          ), // TextField
+        ), // Padding
+      ), // Scaffold
+    ); // MaterialApp
   }
 }
 

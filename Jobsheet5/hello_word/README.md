@@ -31,3 +31,7 @@ NIM : 2341720212
 ## Langkah 4: Dialog Widget
 
 ![alt text](image-5.png)
+
+## Langkah 5: Input dan Selection Widget
+
+![alt text](image-6.png)
