@@ -1,77 +1,73 @@
-import 'basic_widgets/text_widget.dart';
-import 'basic_widgets/image_widget.dart';
-import 'basic_widgets/loading_cupertino.dart';
-import 'basic_widgets/fab_widget.dart';
-import 'basic_widgets/scaffold_widget.dart';
+import 'dart:async';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Praktikum 5',
-      home: Scaffold(
-        appBar: AppBar(title: const Text("Contoh TextField")),
-
-        // TAMBAH WIDGET PADDING DI SINI
-        body: Padding(
-          padding: const EdgeInsets.all(
-            16.0,
-          ), // Beri padding 16.0 di semua sisi
-          child: TextField(
-            obscureText: false,
-            decoration: const InputDecoration(
-              border: OutlineInputBorder(),
-              labelText: 'Nama',
-            ),
-          ), // TextField
-        ), // Padding
-      ), // Scaffold
-    ); // MaterialApp
-  }
-}
-
-class MyLayout extends StatelessWidget {
-  const MyLayout({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: ElevatedButton(
-        child: const Text('Show alert'),
-        onPressed: () {
-          showAlertDialog(context);
-        },
-      ),
+    return const MaterialApp(
+      title: 'Contoh Date Picker',
+      home: MyHomePage(title: 'Contoh Date Picker'),
     );
   }
 }
 
-void showAlertDialog(BuildContext context) {
-  Widget okButton = TextButton(
-    child: const Text("OK"),
-    onPressed: () {
-      Navigator.pop(context);
-    },
-  );
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({Key? key, required this.title}) : super(key: key);
 
-  AlertDialog alert = AlertDialog(
-    title: const Text("My title"),
-    content: const Text("This is my message."),
-    actions: [okButton],
-  );
+  final String title;
 
-  showDialog(
-    context: context,
-    builder: (BuildContext context) {
-      return alert;
-    },
-  );
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  // Variable/State untuk mengambil tanggal
+  DateTime selectedDate = DateTime.now();
+
+  //  Initial SelectDate FLutter
+  Future<void> _selectDate(BuildContext context) async {
+    // Initial DateTime FIinal Picked
+    final DateTime? picked = await showDatePicker(
+        context: context,
+        initialDate: selectedDate,
+        firstDate: DateTime(2015, 8),
+        lastDate: DateTime(2101));
+    if (picked != null && picked != selectedDate) {
+      setState(() {
+        selectedDate = picked;
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            Text("${selectedDate.toLocal()}".split(' ')[0]),
+            const SizedBox(
+              height: 20.0,
+            ),
+            ElevatedButton(
+              onPressed: () => {
+                _selectDate(context),
+                // ignore: avoid_print
+                print(selectedDate.day + selectedDate.month + selectedDate.year)
+              },
+              child: const Text('Pilih Tanggal'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }

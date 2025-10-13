@@ -35,3 +35,7 @@ NIM : 2341720212
 ## Langkah 5: Input dan Selection Widget
 
 ![alt text](image-6.png)
+
+## Langkah 6: Date and Time Pickers
+
+![alt text](image-7.png)
