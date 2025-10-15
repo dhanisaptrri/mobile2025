@@ -28,9 +28,13 @@
 
 ![alt text](image-3.png)
 
-##
-##
-##
+# Praktikum 4: Implementasi image section
+
+## Langkah 1: Siapkan aset gambar
+
+## Langkah 2: Tambahkan gambar ke body
+
+## Langkah 3: Terakhir, ubah menjadi ListView
 ##
 ##
 ##
