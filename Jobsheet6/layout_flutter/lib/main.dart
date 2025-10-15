@@ -41,12 +41,12 @@ class MyApp extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: const Text(
-                    'Wisata Gunung di Batu',
+                    'Banda Neira',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
                 const Text(
-                  'Batu, Malang, Indonesia',
+                  'kepulauan Banda, Maluku, Indonesia',
                   style: TextStyle(color: Colors.grey),
                 ),
               ],
@@ -75,10 +75,9 @@ class MyApp extends StatelessWidget {
     Widget textSection = Container(
       padding: const EdgeInsets.all(32),
       child: const Text(
-        'Gunung Batu adalah salah satu destinasi wisata alam '
-        'yang populer di Kota Batu, Malang. Pemandangan alamnya '
-        'yang indah serta udara yang sejuk membuat tempat ini '
-        'menjadi favorit wisatawan.',
+        'Banda Neira adalah sebuah pulau di Kepulauan Banda, Maluku, yang terkenal karena sejarahnya sebagai pusat perdagangan pala dan fuli, serta keindahan alamnya seperti pantai dan terumbu karang.'
+        'Pulau ini juga kaya akan situs bersejarah, termasuk benteng-benteng peninggalan kolonial Belanda seperti Benteng Belgica dan rumah-rumah tempat para pejuang kemerdekaan seperti Hatta dan Syahrir pernah diasingkan.'
+        'Dhaniasa Putri Mashilfa - 2341720212',
         softWrap: true,
       ),
     );
