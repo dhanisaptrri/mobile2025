@@ -21,13 +21,12 @@ Langkah 5 bertujuan untuk menambahkan variabel dan constructor pada widget RedTe
 
 
 4. Pada langkah 6 terdapat dua widget yang ditambahkan, jelaskan fungsi dan perbedaannya!
-|       | Widget            | Fungsi                                                                                               | Perbedaan                                                                                        |
-| :---- | :---------------- | :--------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
-| **1** | **RedTextWidget** | Menampilkan teks berwarna merah yang secara otomatis menyesuaikan ukuran huruf agar tidak terpotong. | Menggunakan plugin **auto_size_text** yang dapat mengatur ukuran font dinamis.                   |
-| **2** | **Text**          | Menampilkan teks biasa tanpa penyesuaian ukuran otomatis.                                            | Widget bawaan Flutter tanpa fitur penyesuaian otomatis — teks bisa meluber jika wadahnya sempit. |
+| | Widget | Fungsi | Perbedaan |
+| :--- | :--- | :--- | :--- |
+| 1 | `RedTextWidget` | Menampilkan teks berwarna merah yang secara otomatis menyesuaikan ukuran huruf agar tidak terpotong. | Menggunakan plugin `auto_size_text` yang dapat mengatur ukuran font dinamis. |
+| 2 | `Text` | Menampilkan teks biasa tanpa penyesuaian ukuran otomatis. | Widget bawaan Flutter tanpa fitur penyesuaian otomatis — teks bisa meluber jika wadahnya sempit. |
 
-5. Jelaskan maksud dari tiap parameter yang ada di dalam plugin auto_size_text berdasarkan tautan pada dokumentasi ini !
-|       | Parameter         | Tipe           | Fungsi                                                              |
+5. Jelaskan maksud dari tiap parameter yang ada di dalam plugin auto_size_text berdasarkan tautan pada dokumentasi ini !|       | Parameter         | Tipe           | Fungsi                                                              |
 | :---- | :---------------- | :------------- | :------------------------------------------------------------------ |
 | **1** | `text`            | `String`       | Isi teks yang akan ditampilkan.                                     |
 | **2** | `style`           | `TextStyle`    | Menentukan warna, ukuran, dan gaya huruf.                           |
