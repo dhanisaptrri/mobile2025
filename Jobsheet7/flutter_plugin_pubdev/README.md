@@ -21,21 +21,30 @@ Langkah 5 bertujuan untuk menambahkan variabel dan constructor pada widget RedTe
 
 
 4. Pada langkah 6 terdapat dua widget yang ditambahkan, jelaskan fungsi dan perbedaannya!
+
 | | Widget | Fungsi | Perbedaan |
 | :--- | :--- | :--- | :--- |
 | 1 | `RedTextWidget` | Menampilkan teks berwarna merah yang secara otomatis menyesuaikan ukuran huruf agar tidak terpotong. | Menggunakan plugin `auto_size_text` yang dapat mengatur ukuran font dinamis. |
 | 2 | `Text` | Menampilkan teks biasa tanpa penyesuaian ukuran otomatis. | Widget bawaan Flutter tanpa fitur penyesuaian otomatis — teks bisa meluber jika wadahnya sempit. |
 
-5. Jelaskan maksud dari tiap parameter yang ada di dalam plugin auto_size_text berdasarkan tautan pada dokumentasi ini !|       | Parameter         | Tipe           | Fungsi                                                              |
-| :---- | :---------------- | :------------- | :------------------------------------------------------------------ |
-| **1** | `text`            | `String`       | Isi teks yang akan ditampilkan.                                     |
-| **2** | `style`           | `TextStyle`    | Menentukan warna, ukuran, dan gaya huruf.                           |
-| **3** | `maxLines`        | `int`          | Menentukan jumlah baris maksimal teks.                              |
-| **4** | `overflow`        | `TextOverflow` | Menentukan perilaku teks saat tidak muat, misalnya `ellipsis` (…).  |
-| **5** | `minFontSize`     | `double`       | Ukuran huruf minimum agar tetap terbaca.                            |
-| **6** | `maxFontSize`     | `double`       | Ukuran huruf maksimum (default mengikuti `TextStyle.fontSize`).     |
-| **7** | `stepGranularity` | `double`       | Langkah penyesuaian ukuran font saat menyesuaikan ruang.            |
-| **8** | `presetFontSizes` | `List<double>` | Daftar ukuran font yang diizinkan.                                  |
-| **9** | `wrapWords`       | `bool`         | Jika `false`, kata panjang tidak akan dipindah ke baris berikutnya. |
+---
+
+5. Jelaskan maksud dari tiap parameter yang ada di dalam plugin `auto_size_text` berdasarkan tautan di dokumentasi ini!
+
+| | Parameter | Tipe | Fungsi |
+| :--- | :--- | :--- | :--- |
+| 1 | `text` | `String` | Isi teks yang akan ditampilkan. |
+| 2 | `style` | `TextStyle` | Menentukan warna, ukuran, dan gaya huruf. |
+| 3 | `maxLines` | `int` | Menentukan jumlah baris maksimal teks. |
+| 4 | `overflow` | `TextOverflow` | Menentukan perilaku teks saat tidak muat, misalnya ellipsis (`...`). |
+| 5 | `minFontSize` | `double` | Ukuran huruf minimum agar tetap terbaca. |
+| 6 | `maxFontSize` | `double` | Ukuran huruf maksimum (default mengikuti `TextStyle.fontSize`). |
+| 7 | `stepGranularity` | `double` | Langkah penyesuaian ukuran font saat menyesuaikan ruang. |
+| 8 | `presetFontSizes` | `List<double>` | Daftar ukuran font yang diizinkan. |
+| 9 | `wrapWords` | `bool` | Jika `false`, kata panjang tidak akan dipindah ke baris berikutnya. |
+
+---
+
+6. Kumpulkan laporan praktikum Anda berupa link repository GitHub kepada dosen!
 
 6. Kumpulkan laporan praktikum Anda berupa link repository GitHub kepada dosen!
