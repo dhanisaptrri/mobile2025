@@ -45,6 +45,5 @@ Langkah 5 bertujuan untuk menambahkan variabel dan constructor pada widget RedTe
 
 ---
 
-6. Kumpulkan laporan praktikum Anda berupa link repository GitHub kepada dosen!
 
 6. Kumpulkan laporan praktikum Anda berupa link repository GitHub kepada dosen!
