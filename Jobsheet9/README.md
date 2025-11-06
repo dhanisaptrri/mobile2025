@@ -7,4 +7,5 @@
 
 # Praktikum 2: Membuat photo filter carousel
 
-![alt text](<C:\Users\USER\OneDrive\Documents\Semester5\mobile2025\Jobsheet9\Gambar WhatsApp 2025-11-06 pukul 18.30.56_5dd19aaa.jpg>)
+![alt text](<Gambar WhatsApp 2025-11-06 pukul 18.30.55_b170a8ae.jpg>)
+![alt text](<Gambar WhatsApp 2025-11-06 pukul 18.30.56_b3b38f8e.jpg>)
