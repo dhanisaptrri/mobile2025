@@ -1,0 +1,30 @@
+name: photo_filter_carousel
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  camera: ^0.11.3
+  path_provider: ^2.1.5
+  path: ^1.9.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# Dalam pubspec.yaml
+
+flutter:
+  uses-material-design: true
+  assets:
+    # Baris di bawah ini harus di-uncomment dan di-indentasi ke kiri
+    - C:\Users\USER\OneDrive\Documents\Semester5\mobile2025\Jobsheet9\photo_filter_carousel\assets\millennial.jpg
