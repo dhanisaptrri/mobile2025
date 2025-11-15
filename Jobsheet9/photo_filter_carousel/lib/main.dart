@@ -1,21 +1,48 @@
-import 'package:flutter/material.dart';
-import 'package:photo_filter_carousel/widget/filter_carousel.dart';
-import 'package:camera/camera.dart';
 
-late List<CameraDescription> cameras;
+// lib/main.dart
+
+import 'package:flutter/material.dart';
+import 'package:camera/camera.dart';
+// Import TakePictureScreen dari folder widget
+import 'widget/takepicture_screen.dart'; 
+
+// Variabel global untuk menyimpan daftar kamera yang tersedia.
+// Meskipun tidak digunakan langsung di runApp, ini diperlukan oleh availableCameras().
+List<CameraDescription> cameras = [];
 
 Future<void> main() async {
-  // Pastikan binding sudah diinisialisasi sebelum panggil plugin apa pun
+  // Pastikan binding sudah diinisialisasi sebelum memanggil plugin kamera
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Ambil daftar kamera yang tersedia di perangkat
-  cameras = await availableCameras();
+  try {
+    // Dapatkan daftar kamera di perangkat
+    cameras = await availableCameras();
+  } on CameraException catch (e) {
+    // Tangani error jika tidak ada kamera atau izin ditolak
+    print('Error: ${e.code}\n${e.description}');
+    // Jika ada error, daftar kamera mungkin kosong.
+  }
 
-  // Jalankan aplikasi
+  // Pilih kamera pertama (biasanya kamera belakang)
+  // Pastikan daftar kamera tidak kosong sebelum mengakses elemen 'first'.
+  final firstCamera = cameras.isNotEmpty ? cameras.first : null;
+
   runApp(
-    const MaterialApp(
-      home: PhotoFilterCarousel(),
+    MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark(),
+      // Mulai aplikasi dengan TakePictureScreen, yang memerlukan CameraDescription
+      home: firstCamera != null
+          ? TakePictureScreen(
+              camera: firstCamera,
+            )
+          : const Center(
+              child: Text(
+                'Tidak ada kamera yang tersedia atau izin ditolak.',
+                textDirection: TextDirection.ltr,
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
     ),
   );
 }

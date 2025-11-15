@@ -27,4 +27,4 @@ flutter:
   uses-material-design: true
   assets:
     # Baris di bawah ini harus di-uncomment dan di-indentasi ke kiri
-    - C:\Users\USER\OneDrive\Documents\Semester5\mobile2025\Jobsheet9\photo_filter_carousel\assets\millennial.jpg
+    - assets/millennial.jpg

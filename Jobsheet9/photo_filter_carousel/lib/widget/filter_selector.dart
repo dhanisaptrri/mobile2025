@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:photo_filter_carousel/widget/filter_item.dart';
 
-
 class FilterSelector extends StatefulWidget {
   const FilterSelector({
     super.key,
@@ -58,20 +57,21 @@ class _FilterSelectorState extends State<FilterSelector> {
         },
         // Dalam _FilterSelectorState di filter_selector.dart
 
-// ...
+        // ...
         itemBuilder: (context, index) {
           final color = widget.filters[index];
           return GestureDetector(
             onTap: () => _onFilterTapped(index),
             child: Padding(
               padding: widget.padding,
-              child: FilterItem( // <--- Ganti dengan FilterItem
+              child: FilterItem(
+                // <--- Ganti dengan FilterItem
                 color: color,
-                ),
               ),
+            ),
           );
         },
-// ...
+        // ...
       ),
     );
   }
