@@ -13,3 +13,30 @@ Ini dilakukan untuk menegakkan prinsip pemisahan tanggung jawab (separation of c
 
 ## 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
 ![alt text](<Video WhatsApp 2025-11-15 pukul 18.18.09_605686c7.gif>)
+
+# Tugas Praktikum 3: State di Multiple Screens
+
+## 1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md! Jika Anda menemukan ada yang error atau tidak berjalan dengan baik, silakan diperbaiki sesuai dengan tujuan aplikasi tersebut dibuat.
+
+## 2. Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram berikut ini!
+![alt text](image.png)
+
+**a. PlanCreatorScreen (Master View)**
+Ini adalah tampilan awal untuk membuat dan memilih Plan.
+
+* Tujuan: Mengelola daftar global List<Plan>.
+
+* Struktur: PlanProvider berada di level tertinggi, menyediakan data global ke PlanCreatorScreen. Screen ini berisi TextField untuk menambah Plan baru (Langkah 12) dan ListView untuk menampilkan semua Plan yang telah dibuat (Langkah 14).
+
+**b. Kanan: PlanScreen (Detail View)**
+Ini adalah tampilan yang muncul setelah memilih salah satu Plan dari Master View.
+
+* Tujuan: Menampilkan dan mengelola Task dari satu Plan yang dipilih.
+
+* Navigasi: Diakses melalui Navigator.push dari PlanCreatorScreen, meneruskan objek Plan yang dipilih melalui constructor (PlanScreen(plan: plan)).
+
+* Struktur: PlanScreen menggunakan Expanded > ListView untuk menampilkan daftar Task dan SafeArea > Text untuk menampilkan pesan progres (completenessMessage). Screen ini mengakses PlanProvider bukan untuk mendapatkan list secara umum, tetapi untuk mencari dan memperbarui Plan spesifik yang sedang ditampilkan di dalam list global tersebut.
+
+## 3. Lakukan capture hasil dari Langkah 14 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+
+![alt text](3.gif)

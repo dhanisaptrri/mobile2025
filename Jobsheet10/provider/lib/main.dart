@@ -2,22 +2,26 @@ import 'package:flutter/material.dart';
 import 'models/data_layer.dart';
 import 'provider/plan_provider.dart';
 import 'screen/plan_screen.dart';
+import 'views/plan_creator_screen.dart';
 
 void main() {
-  runApp(const MasterPlanApp());
+  runApp(const MyApp());
 }
 
-class MasterPlanApp extends StatelessWidget {
-  const MasterPlanApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Master Plan',
-      theme: ThemeData(primarySwatch: Colors.purple),
-      home: PlanProvider(
-        notifier: ValueNotifier<Plan>(const Plan()),
-        child: const PlanScreen(),
+    return PlanProvider(
+      notifier: ValueNotifier<List<Plan>>(const []),
+      child: MaterialApp(
+        title: 'State management app',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        // --- Langkah 9: Ubah home ---
+        home: const PlanCreatorScreen(), // Diperlukan perubahan pada Langkah 3
       ),
     );
   }
