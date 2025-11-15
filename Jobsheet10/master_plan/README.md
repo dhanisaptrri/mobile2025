@@ -2,7 +2,7 @@
 
 ## 1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md! Jika Anda menemukan ada yang error atau tidak berjalan dengan baik, silakan diperbaiki.
 
-<video controls src="Video WhatsApp 2025-11-15 pukul 17.33.09_cc1ab9c1.mp4" title="Title"></video>
+![alt text](10.gif)
 
 ## 2. Jelaskan maksud dari langkah 4 pada praktikum tersebut! Mengapa dilakukan demikian?
 
