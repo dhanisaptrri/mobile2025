@@ -16,7 +16,7 @@ Konstanta (const): Class Plan dan Task bersifat immutable (tidak dapat diubah). 
 
 ## 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
 
-<video controls src="Video WhatsApp 2025-11-15 pukul 17.33.18_8644e42a.mp4" title=""></video>
+![alt text](9.gif)
 
 
 ## 5. Apa kegunaan method pada Langkah 11 dan 13 dalam lifecyle state ?
